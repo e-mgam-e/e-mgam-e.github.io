@@ -4,58 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт-визитка Романа Извекова</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header class="header">
 
-        <h1>Сайт-визитка Романа Извекова</h1>
-        <h2>Главная</h2>
-        
-        <p>
-            Напутствие команды: Возьми, подолбись и занеси попытку
-        </p>
-
-        <nav>
+        <h1_header>
+            Сайт-визитка Романа Извекова
+        </h1_header>
+        <br>
+        <br>
+        <h2_header style="display: block;">
+            Главная
+        </h2_header>
+        <nav_header>
             <ul>
-                <li><a href="./blog.html">Блог</a></li>
-                <li><a href="./ProjectsAndAchievements.html">Проекты и достижения</a></li>
-                <li><a href="./Summary.html">Резюме</a></li>
+                <p_nav>{Навигация}</p_nav>
+                <li><a id="a-header" href="./blog.html">Блог</a></li>
+                <li><a id="a-header" href="./ProjectsAndAchievements.html">Проекты и достижения</a></li>
+                <li><a id="a-header" href="./Summary.html">О себе</a></li>
             </ul>
-        </nav>
+        </nav_р>
         
     </header>
-
+    <br>
     <main class="main">
 
         <div>
-            <p>
-                ПУ-ПУ-ПУ Тут будет кратко обо мне, кто я такаой: Whoi am? I am hy...(не тот текст)
-            </p>
-            <p style="display: inline;">Чтобы узнать нужный текст</p>
-            <button>НАЖМИ</button>
+            <p_stat_text style="display: block;">
+                ПУ-ПУ-ПУ Тут будет кратко обо мне, 
+                кто я такаой: Whoi am? I am hy...
+                (не тот текст)
+            </p_stat_text>
+            <p_stat_text 
+            style="display: inline;">
+                Чтобы узнать нужный текст
+            </p_stat_text>
+            <a href="./Summary.html"
+            class="button"
+            style="margin-top: 1rem;
+            margin-left: max(2vw, 10px)">
+                НАЖМИ
+            </a>
         </div>
 
         <br>
+        <br>
 
-        <img src="./img/photo_2025-05-26_12-33-40.jpg" 
+        <img 
+        class="photo_my"
+        src="./img/photo_2025-05-26_12-33-40.jpg" 
         alt="Здесь моё жмыхнутое фото, потому что это прикольно" 
-        width="200" 
-        height="200">
+        >
     
     </main>
 
     <br>
+    <br>
+
     <aside class="aside">
         <section>Статья 1</section>
+        <br>
         <section>Статья 2</section>
+        <br>
         <section>Статья 3</section>
     </aside>
 
     <br>
+    <br>
 
     <footer class="footer">
-        <a href="">ТГ</a>
-        <a href="https://github.com/e-mgam-e">GitHub</a>
+        <a class="contact" id="TG" href="">ТГ</a>
+        <a class="contact" id="GitHub" href="https://github.com/e-mgam-e">GitHub</a>
     </footer>
 </body>
 </html>
