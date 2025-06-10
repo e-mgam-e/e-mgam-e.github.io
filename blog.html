@@ -13,10 +13,6 @@
         </h1_header>
         <br>
         <br>
-        <h2_header style="display: block;">
-            Блог
-        </h2_header>
-        <br>
         <h3_header style="display: block;">
             Моя жизнь в команде Малахит
         </h3_header>
@@ -28,6 +24,9 @@
         <nav_header>
             <ul>
                 <p_nav>{Навигация}</p_nav>
+                <h2_header style="display: inline;">
+                    Блог
+                </h2_header>
                 <li><a id="a-header" href="./index.html">Главная</a></li>
                 <li><a id="a-header" href="./ProjectsAndAchievements.html"> Проекты и достижения</a></li>
                 <li><a id="a-header" href="./Summary.html">О себе</a></li>
@@ -41,7 +40,9 @@
     <main class="main">
 
         <article>
-            <hstat>Выезд на первенство студенческих команд</hstat>
+            <hstat id="stydent">
+                Выезд на первенство студенческих команд
+            </hstat>
             <br>
             <br>
             <p_stat_text style="display: block;">
@@ -116,7 +117,7 @@
         <br>
         <br>
         <article>
-            <hstat>
+            <hstat id="winRat">
                 Прошёл матч между РК "Малахит" и РК "Рать"
             </hstat>
             <br>
@@ -166,7 +167,7 @@
         <br>
         <br>
         <article>
-            <hstat>
+            <hstat id="Vit">
                 Статья о будущем матче между Малахитом и Витязем
             </hstat>
             <br>
@@ -193,12 +194,24 @@
     <br>
     <br>
     
-    <aside class="aside">
-        <section>Статья 1</section>
+    <aside>
+        <a href="#stydent"
+        class="aside"
+        style="display: block;">
+            Выезд на первенство студенческих команд
+        </a>
         <br>
-        <section>Статья 2</section>
+        <a href="#winRat"
+        class="aside"
+        style="display: block;">
+            Прошёл матч между РК "Малахит" и РК "Рать"
+        </a>
         <br>
-        <section>Статья 3</section>
+        <a href="#Vit"
+        class="aside"
+        style="display: block;">
+            Статья о будущем матче между Малахитом и Витязем
+        </a>
     </aside>
 
     <br>
