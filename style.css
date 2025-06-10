@@ -27,7 +27,6 @@ nav_header {
 p_nav {
     font-size: 1.5vw; 
     text-decoration: underline;
-    color: rgba(0, 0, 0, 0.411);
 }
 
 #a-header {
@@ -142,3 +141,59 @@ p_text_my {
     }
 }
 
+
+
+/* */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --accent-color: #007acc;
+}
+
+body.dark {
+  --bg-color: #1e1e1e;
+  --text-color: #f0f0f0;
+  --accent-color: #ffa500;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+#theme-toggle {
+  background: var(--accent-color);
+  color: var(--bg-color);
+  border: none;
+  padding: 0.5em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+#theme-toggle:hover {
+  transform: scale(1.05);
+}
+
+
+
+a, button {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+a:hover, button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
